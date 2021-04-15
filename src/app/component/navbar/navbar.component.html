@@ -1,0 +1,29 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/Home">VO2MAX</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" (click)="Click(0)">
+                <a class="nav-link" routerLink="/Home">Home</a>
+            </li>
+            <li class="nav-item" (click)="Click(1)">
+                <a class="nav-link" routerLink="/Live">Live</a>
+            </li>
+            <li class="nav-item" (click)="Click(2)">
+                <a class="nav-link" routerLink="/record">Historial</a>
+            </li>
+            <li class="nav-item" (click)="Click(3)">
+                <a class="nav-link" routerLink="/Login">Iniciar Sesion</a>
+            </li>
+            <li class="nav-item" (click)="Click(4)" (click)="CloseSesion()">
+                <a class="nav-link" routerLink="/Login">Cerrar Sesion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled text-white">{{Hora_Tiempo_Real}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row justify-content-md-center" style="margin-top: 25px;">
+        <div class="col-xs-12 col-sm-12 col-md-11">
+            <app-graphline #Graph></app-graphline>
+        </div>
+        <div class="col-1">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">timeline</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" (click)="SumatoriaVolumenes()">VO2MAX</a>
+                    <a class="dropdown-item" (click)="UpdateGraphMediciones()">MEDICIONES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-md-center" style="margin-top: 25px;">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <table class="table table-hover" style="background-color: rgba(255, 255, 255, 0.397);margin-top: 25px;">
+                <thead style="background-color: rgba(0, 0, 0, 0.685);">
+                    <tr>
+                        <th scope="col" class="text-white">#</th>
+                        <th scope="col" class="text-white">Nombre Reporte</th>
+                        <th scope="col" class="text-white">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"> 1 </th>
+                        <td> Volumen Exhalado Maximo </td>
+                        <td> {{VolOxigeno.MaxEx}} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> 2 </th>
+                        <td> Volumen Exhalado Minimo </td>
+                        <td> {{VolOxigeno.MinEx}} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> 3 </th>
+                        <td> Volumen Exhalado Promedio </td>
+                        <td> {{VolOxigeno.PromEx}} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> 4 </th>
+                        <td> Volumen Inhalado Maximo </td>
+                        <td> {{VolOxigeno.MaxIn}} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> 5 </th>
+                        <td> Volumen Inhalado Minimo </td>
+                        <td> {{VolOxigeno.MinIn}} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> 6 </th>
+                        <td> Volumen Inhalado Promedio </td>
+                        <td> {{VolOxigeno.PromIn}} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
